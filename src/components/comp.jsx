@@ -17,7 +17,7 @@ class MyComponent extends React.Component {
     const { name, age, gender, happy, address, books, color } = this.props
     return (
       <div onClick={this.handleClick}>
-        Hello {name}, {age}, {gender}, {happy ? ':)' : ':('}
+        Hellos {name}, {age}, {gender}, {happy ? ':)' : ':('}
         <pre>
           {JSON.stringify(address)}
         </pre>
