@@ -1,6 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+/**
+ * General component description.
+ */
 class MyComponent extends React.Component {
 
   constructor(props) {
@@ -9,6 +12,7 @@ class MyComponent extends React.Component {
     this.handleClick = this.handleClick.bind(this)
   }
 
+  /** description of the handleClick method */
   handleClick() {
     this.setState(state => ({ test: `yeah ${state.test}` }))
   }
@@ -44,8 +48,11 @@ MyComponent.defaultProps = {
 }
 
 MyComponent.propTypes = {
-  name: PropTypes.string,
-  age: PropTypes.number,
+  /** description of the name property */
+  name: PropTypes.string.isRequired,
+  /** description of the age property */
+  age: PropTypes.number.isRequired,
+  /** description of the gender property */
   gender: PropTypes.oneOf(['Male', 'Female']),
   happy: PropTypes.bool,
   address: PropTypes.object,
