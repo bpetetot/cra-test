@@ -28,6 +28,9 @@ class MyComponent extends React.Component {
         <pre>
           {JSON.stringify(books)}
         </pre>
+        <pre>
+          State: {JSON.stringify(this.state)}
+        </pre>
         <div style={{ width: '10px', height: '10px', backgroundColor: color }} />
       </div>
     )
